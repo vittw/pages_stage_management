@@ -1,0 +1,63 @@
+{
+  "name": "quality",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "devbuild": "vue-cli-service build --mode testing",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "iview": "^3.3.3",
+    "js-base64": "^2.5.1",
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.1",
+    "vue-simple-uploader": "^0.7.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.1.0",
+    "qs": "^6.6.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "indent": [
+        0,
+        2
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

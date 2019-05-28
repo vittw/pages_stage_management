@@ -1,0 +1,867 @@
+
+*{
+//  font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+//  font-family: SimSun;
+}
+#app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+//面包屑中的箭头的颜色
+.ivu-breadcrumb-item-separator{
+    color: #333333;
+}
+.ivu-form-item-required .ivu-form-item-label:before {
+    content: '';
+}
+.ivu-form-item-required .ivu-form-item-content:after{
+    content: '*';
+    display: inline-block;
+    margin-right: 4px;
+    line-height: 1;
+    font-family: SimSun;
+    font-size: 12px;
+    color: #f30;
+    position: absolute;
+    top: 1px;
+    right: -14px;
+}
+.ivu-form-item-error-tip{
+    z-index: 99999 !important;
+}
+.ivu-form-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .ivu-form-item-content{
+        width: 200px !important;
+//      margin-left: 10px !important;
+        position: relative;
+    }
+    .ivu-form-item-label{
+        
+        min-width: 53px;
+        padding-right: 0px !important;
+        max-width: ;
+        text-align: left !important;
+        color: #555555;
+        font-size: 12px;
+    }
+}
+//第一部分
+.stepOne .step_bottom .ivu-form-item .ivu-form-item-content{
+    margin-left: 0px !important;
+    min-width: 0px;
+}
+.stepOne .step_bottom .ivu-form-item{
+    margin-right: 15px;
+    .ivu-form-item-label{
+        width: 80px;
+    }
+} 
+.p2 .ivu-form-item .ivu-form-item-content{
+    width: 345px !important;
+}
+.stepTwo .step_bottom .ivu-form-item{
+//  margin-right: 15px;
+    .ivu-form-item-label{
+        width: 80px;
+    }
+} 
+.stepThree .step_bottom .ivu-form-item{
+//  margin-right: 15px;
+    .ivu-form-item-label{
+        width: 80px;
+    }
+} 
+.stepFour .step_bottom .ivu-form-item{
+//  margin-right: 15px;
+    .ivu-form-item-label{
+        width: 80px;
+    }
+} 
+//第五部分
+.stepFive .step_bottom{
+    .ivu-form-item{
+        .ivu-form-item-content{
+            width: 531px !important;
+            margin-left: 0px !important;
+        }
+    }
+}
+//附件上传
+.uploadFile{
+    position: relative;
+    margin-top: -32px;
+    
+}
+//*************************工单查询**************************************
+.query_outBox .query_mainBox{
+    .query_form .query_mleft{
+        .ivu-form-item{
+            margin-bottom: 0px !important;
+            .ivu-form-item-content{
+                margin-left: 0px !important;
+                .ivu-select{
+                    .ivu-select-selection{
+                        border-bottom-width: 0px !important;
+                        border-bottom-left-radius: 0px !important;
+                        border-bottom-right-radius: 0px !important;
+                    }
+                }
+                .ivu-input-wrapper{
+                    .ivu-input{
+                        border-top-left-radius: 0px !important;
+                        border-top-right-radius: 0px !important;
+                        
+                  }
+                }
+            }
+        }
+    }
+}
+.creatTime{
+    
+    .ivu-form-item-content{
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        
+        margin-left: -8px !important;
+        .ivu-select{
+            .ivu-select-selection{
+                border-width: 0px !important;
+                .ivu-select-placeholder{
+//                  padding-left: 0px !important;
+                    color: #333333;
+                }
+            }
+        }
+        .ivu-date-picker{
+            .ivu-date-picker-rel{
+//              width: 200px !important;
+            }
+        }
+    }
+}
+
+
+
+
+.ivu-select-dropdown-list{
+    max-height: 160px !important;
+    max-width: 190px !important;
+}
+
+//表格中每个单元格的高度
+.ivu-table th, .ivu-table td{
+    height: 36px !important;
+}
+/*模态框的位置*/
+.vertical-center-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ivu-modal{
+        top: 0;
+        width: 720px !important;
+    }
+}
+.tableDetail{
+    .ivu-modal .ivu-modal-content{
+        .ivu-modal-body{
+            padding: 0px !important;
+        }
+    }
+}
+
+//设置按钮出来的下拉框的位置
+.dropTwo .ivu-select-dropdown{
+    left: 1433px !important;
+}
+//########服务质量考核###########
+.checkInputBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .checkItem{
+        width: 50% !important;
+    }
+}
+.checkItem{
+    .ivu-form-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 5px;
+        .ivu-form-item-content{
+            width: 320px !important;
+            margin-left: 0px !important;
+        }
+    }
+}
+.check_remarek{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .checkItem{
+        width: 50% !important;
+        .ivu-form-item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            .ivu-form-item-label{
+                width: 100% !important;
+            }
+        }
+    }
+}
+.check_upload{
+    width: 100%;
+    .ivu-form-item{
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        .ivu-form-item-content{
+            width: 97% !important;
+            margin-left: 0px !important;
+            .ivu-upload{
+                padding: 10px 0px 10px 0px;
+                border-radius: 2px;
+                .ivu-upload-select{
+                    padding: 0px;
+                    border-width: 0px;
+                }
+                .ivu-upload-list{
+                    .ivu-upload-list-file{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .ivu-upload-list-remove{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//申请介入中的申诉原因
+.applyCause{
+    .ivu-form-item{
+        width: 100%;
+        .ivu-form-item-label{
+            width: 100% !important;
+        }
+        .ivu-form-item-content{
+            width: 98% !important;
+            margin-left: 0px !important;
+        }
+    }
+}
+//级联选择
+.levelForm{
+    .ivu-form-item-content{
+        width: 300px !important;
+    }
+}
+
+.cell_state{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    position: relative;
+    .color_icon{
+        display: inline-block;
+        width: 17px;
+        height: 18px;
+        border-radius:8px 8px 0px 8px;
+        position: absolute;
+        top: 0px;
+        left: -17px;
+        z-index: 19999;
+    }
+    .color_title{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+    }
+}
+
+//***********工单处理---处理详情****************
+.order_type{
+//  width: 100% !important;
+    .ivu-form-item-content{
+        width: 300px !important;
+    }
+}
+//处理详情
+.detailForm{
+   .ivu-form-item{
+       width: 262px !important;
+       margin-bottom: 10px !important;
+       .ivu-form-item-content{
+//         width: 151px !important;
+       }
+       .ivu-form-item-label{
+           width: 112px !important;
+       }
+   } 
+   :nth-child(8){
+       width: 401px !important;
+       .ivu-form-item-content{
+            width: 400px !important;
+        }
+   }
+   :nth-child(13){
+       width: 401px !important;
+       .ivu-form-item-content{
+            width: 400px !important;
+        }
+   }
+}
+.detailForm .ivu-form-item:nth-child(9){
+    width: 401px !important;
+    .ivu-form-item-content{
+        width: 500px !important;
+    }
+}
+.detailForm .ivu-form-item:nth-child(14){
+    width: 401px !important;
+    .ivu-form-item-content{
+           width: 500px !important;
+       }
+}
+
+//工单考核记录
+.exam_outerBox .eB_right{
+    .examForm{
+        .ivu-form-item{
+            margin-bottom: 10px !important;
+            .ivu-form-item-label{
+                width: 60px !important;
+            }
+            .ivu-form-item-content{
+                width: 140px !important;
+            }
+        }
+        :nth-child(1) .ivu-form-item-content{
+            width: 200px !important;
+        }
+        :nth-child(2) .ivu-form-item-content{
+            width: 300px !important;
+        }
+        :nth-child(7),:nth-child(9),:nth-child(11){
+            width: 35% !important;
+        }
+        :nth-child(13),:nth-child(14),:nth-child(15),:nth-child(16){
+            width: 52% !important;
+        }
+        :nth-child(12),:nth-child(17),:nth-child(18) {
+            .ivu-form-item-content{
+                width: 579px !important;
+            }
+        }
+    }
+}
+//历史处理记录
+.historyBox .exam_outerBox .eB_right .sd{
+    .ivu-form-item{
+        margin-bottom: 8px !important;
+        .ivu-form-item-content{
+            width: 130px !important;
+        }
+        .ivu-form-item-label{
+            width: 90px !important;
+            min-width: 60px !important;
+        }
+    }
+    :nth-child(2){
+        .ivu-form-item-content{
+            width: 290px !important;
+        }
+    }
+    :nth-child(3),:nth-child(4),:nth-child(5){
+        width: 31% !important;
+        .ivu-form-item-content{
+            width: 95px !important;
+        }
+    }
+    :nth-child(6) .ivu-form-item-content{
+        width: 540px !important;
+    }
+    :nth-child(7),:nth-child(10),:nth-child(17),:nth-child(20){
+        width: 97% !important;
+        .ivu-form-item-content{
+            width: 540px !important;
+        }
+    }
+    :nth-child(11){
+        width: 35% !important;
+    }
+    :nth-child(12),:nth-child(13),:nth-child(14),:nth-child(15),:nth-child(16),:nth-child(18),:nth-child(19){
+        width: 35% !important;
+        .ivu-form-item-content{
+            width: 130px !important;
+        }
+    }
+    
+}
+     
+//先行理赔记录
+.claim_out .claimForm{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    .ivu-form-item{
+        margin-bottom: 8px !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .ivu-form-item-content{
+            width: 160px !important;
+        }
+    }
+    :nth-child(4),:nth-child(6),:nth-child(8){
+        width: 48% !important;
+        .ivu-form-item-label{
+            width: 100px !important;
+        }
+    }
+    :nth-child(5),:nth-child(7),:nth-child(9){
+        width: 48% !important;
+        .ivu-form-item-label{
+            width: 85px !important;
+        }
+    }
+    :nth-child(10){
+        width: 100% !important;
+        flex-direction: column !important;
+        .ivu-form-item-content{
+            width: 100% !important;
+            margin-left: 0px !important;
+        }
+    }
+    :nth-child(11),:nth-child(12){
+        width: 48% !important;
+        flex-direction: column !important;
+        .ivu-form-item-content{
+            width: 100% !important;
+            margin-left: 0px !important;
+        }
+    }
+}
+//发起留言
+.addBox .formAdd{
+    .ivu-form-item{
+        position: relative;
+        margin-right: 30px;
+        .ivu-form-item-content{
+            width:150px !important;
+        }
+    }
+    :nth-child(5),:nth-child(6){
+        .ivu-form-item-content{
+            width: 413px !important;
+        }
+    }
+    :nth-child(7){
+        width: 100% !important;
+        .ivu-form-item-content{
+            width: 100% !important;
+        }
+    }
+    .ivu-form-item-required .ivu-form-item-content:after{
+        content: '';
+    }
+    .ivu-form-item-required .ivu-form-item-label:before{
+        content: '*';
+        display: inline-block;
+        margin-right: 4px;
+        line-height: 1;
+        font-family: SimSun;
+        font-size: 12px;
+        color: #f30;
+        position: absolute;
+        top: 10px;
+        left: -8px;
+    }
+}
+//处理详情中的右边部分
+.main_right .mr_form .mr_ft{
+    .ivu-form-item{
+//      width: 50% !important;
+//      margin-right: 30px !important;
+        .ivu-form-item-label{
+            width: 85px !important;
+        }
+        .ivu-form-item-content{
+//          width: 210px !important;
+        }
+    }
+    .time{
+        width: 100% !important;
+        .ivu-form-item-label{
+//          width: 105px !important;
+        }
+        .ivu-form-item-content{
+            width: 530px !important;
+        }
+    }
+    .desc{
+        width: 100% !important;
+        .ivu-form-item-content{
+            width: 100% !important;
+        }
+    }
+    .claimDot{
+        width: 48% !important;
+        .ivu-form-item-label{
+            width: 90px !important;
+        }
+        .ivu-form-item-content{
+            width: 150px !important;
+        }
+    }
+    :nth-child(7){
+        width: 100% !important;
+        .ivu-form-item-content{
+            width: 100% !important;
+        }
+    }
+}
+.main_right .mr_form .mr_fb{
+    .ivu-form-item{
+        width: 100% !important;
+        .ivu-form-item-content{
+            width: 100% !important;
+        }
+    }
+    .reply{
+        display: flex;
+        flex-direction: column;
+        .ivu-form-item-label{
+            width: 100%!important;
+        }
+        .ivu-form-item-content{
+            width: 100% !important;
+            margin-left: 0px !important;
+        }
+    }
+}
+.main_right .mr_form .mr_ft .ivu-form-item:nth-child(2){
+    width: 100% !important;
+    .ivu-form-item-content{
+        width: 100% !important;
+    }
+}
+//提交驿站
+
+.subStation{
+    .s_input{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .ivu-form-item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .ivu-form-item-label{
+                width: 84px !important;
+            }
+            .ivu-form-item-content{
+                width: 120px !important;
+            }
+        }
+    }
+    .s_desc{
+        .ivu-form-item{
+            width: 100% !important;
+            .ivu-form-item-content{
+                width: 100% !important;
+                margin-left: 0px !important;
+            }
+        }
+    }
+}
+//短信推送
+.subStation{
+    .ivu-checkbox-group{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .ivu-checkbox-wrapper{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .ivu-checkbox{
+                sapn:nth-child(2){
+                    display: inline-block;
+                    width: 80px !important;
+                }
+            }
+            .ivu-input-wrapper{
+                width: 70% !important;
+            }
+        }
+    }
+}
+//提交先行理赔
+.claim{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .ivu-form-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 10px !important;
+        margin-right: 15px !important;
+        .ivu-form-item-label{
+            width: 100px !important;
+            color: #464C5B;
+            font-weight: bold;
+        }
+        .ivu-form-item-content{
+            
+        }
+    }
+    :nth-child(10),:nth-child(11),:nth-child(12){
+        width: 100% !important;
+        flex-direction: column;
+        .ivu-form-item-label{
+            width: 100% !important;
+        }
+        .ivu-form-item-content{
+            width: 100% !important;
+            margin-left: 0px !important;
+        }
+        .ivu-upload{
+            border: 1px solid #DCDEE2;
+            border-radius: 4px;
+            .ivu-upload-select{
+                border-width: 0px;
+            }
+        }
+    }
+}
+
+//批量处理
+.batchForm{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    .ivu-form-item{
+        margin-bottom: 10px !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .ivu-form-item-content{
+        
+        }
+    }
+    
+}
+.batchFiles{
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    .ivu-form-item-label{
+        width: 100% !important;
+    }
+    .ivu-form-item-content{
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+}
+
+
+
+//###########################一体化查询####################
+.inte_bot_main{
+    .ivu-collapse{
+        .ivu-collapse-item{
+            .ivu-collapse-header{
+                font-weight: bold;
+            }
+        }
+    }
+    .ivu-drawer-wrap{
+        height: 500px;
+        position: absolute !important;
+//      top: 10px;
+//      right: 15px;
+        .ivu-drawer{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border: 1px solid #DCDEE2;
+        }
+    }
+}
+
+//##############邮政工单导入￥￥￥￥￥########
+//新增
+.addMail{
+    width: 100% !important;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+    .ivu-form-item{
+        width: 45% !important;
+        .ivu-form-item-label{
+            width: 80px !important;
+        }
+        .ivu-form-item-content{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+    :nth-child(5),:nth-child(6),:nth-child(9),:nth-child(12),:nth-child(13){
+        width: 100% !important;
+        .ivu-form-item-content{
+            margin-left: 0px !important;
+            width: 85% !important;
+        }
+    }
+}
+//###############敏感用户维护￥￥￥￥￥￥￥￥￥
+//增加
+.add{
+    .ivu-form-item{
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .ivu-form-item-content{
+            width: 50% !important;
+        }
+    }
+}
+.ivu-tabs{
+    display: flex;
+    flex-direction: column;
+    .ivu-tabs-bar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+.inputTotal{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #555555;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding-right: 10px;
+}
+.ivu-input[disabled], fieldset[disabled] .ivu-input{
+    color: black !important;
+}
+
+
+.claimDot .ivu-select-dropdown{
+    left: 2px !important;
+    top: 29px !important;
+}
+
+.drop{
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    width: 100%;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #fff;
+    max-height: 160px !important;
+    z-index: 9999;
+//  max-width: 190px !important;
+    .drop_item{
+        margin: 0;
+        line-height: normal;
+        padding: 5px 16px;
+        clear: both;
+        color: #000000;
+        font-size: 12px !important;
+        white-space: nowrap;
+        list-style: none;
+        cursor: pointer;
+        -webkit-transition: background 0.2s ease-in-out;
+        transition: background 0.2s ease-in-out;
+    }
+    :hover{
+        cursor: pointer;
+        background: #f3f3f3;
+    }
+}
+//white-space
+.ivu-table-cell{
+    padding-left: 5px !important;
+    padding-top: 5px !important;
+    padding-right: 5px !important;//  transform: scale(0.8)
+//  font-size: 12px !important;
+//  font-weight: 100 !important;
+//  white-space: initial !important;
+//  padding-left: 10px !important;
+//  white-space: inherit !important;
+}
+
+
+.ivu-select-dropdown{
+    z-index: 9999 !important;
+}
+.agingUpfile{
+        width: 100%;
+        .myFileBox {
+            .up_header{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                .hh{
+                    width: 100%;
+                    margin-right: 0px;
+                    text-align: left;
+                }
+                .warn{
+                    display: inline-block;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+            .content{
+                width: 100% !important;
+            }
+        }
+    }

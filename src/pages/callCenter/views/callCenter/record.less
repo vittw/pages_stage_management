@@ -1,0 +1,57 @@
+.record_box{
+  position: relative;
+  height: 200px;
+  overflow-y: auto;
+  border: 1px solid #e8eaec;
+  .messageAdd{
+    position: absolute;
+    top: 4px;
+    right: 15px;
+  }
+  .re_item{
+    .re_item_title{
+      height: 40px;
+      background-color: #F8F8F9;
+      padding-left: 20px;
+      padding-right: 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      span{
+        width: 30%;
+        color: #000000;
+      }
+    }
+    .re_item_main{
+      padding-left: 20px;
+      padding-right: 15px;
+      .m_title{
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        span{
+          display: inline-block;
+          width: 30%;
+        }
+      }
+      .clickMore{
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        color: #0B9AFC;
+      }
+    }
+  }
+  .no_data {
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -50px;
+  }
+}

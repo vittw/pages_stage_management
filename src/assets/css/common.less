@@ -1,0 +1,208 @@
+//warp 容器  header 顶部  section 底部整个模块
+
+.warper {
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-flow: column nowrap;
+  header{
+    height: 48px;
+    padding: 8px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .header_left{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .colorBlock{
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        background-color: #F1701F;
+        margin-right: 8px;
+      }
+    }
+    .header_right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      button {
+        margin-left: 8px
+      }
+      button:first-child {
+        margin-left: 0
+      }
+    }
+  }
+  section.default{
+    flex: 1;
+    background: #ffffff;
+    margin: 0 10px 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    form{
+      .from_module{
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .ivu-form-item{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .table{
+      flex: 1;
+      overflow: hidden;
+      .clickNum:hover {
+        color: red;
+        cursor:pointer
+      }
+    }
+    .pages{
+      height: 52px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  section.normal{
+    height: auto;
+    background: #ffffff;
+    margin: 0 10px 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    form{
+      .from_module{
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .ivu-form-item{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+.warper.normal {
+  height: auto;
+}
+.warper.affix {
+  display: block;
+  padding-top: 48px;
+  header{
+    position: fixed;
+    left: 200px;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: auto;
+    background: #f5f5f5;
+  }
+  section.normal {
+    display: block;
+  }
+}
+
+.warper_model {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  header{
+    height: 48px;
+    padding: 0 0 8px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .header_left{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .colorBlock{
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        background-color: #F1701F;
+        margin-right: 8px;
+      }
+    }
+    .header_right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      button {
+        margin-left: 8px
+      }
+      button:first-child {
+        margin-left: 0
+      }
+    }
+  }
+  section.default{
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    form{
+      .from_module{
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .ivu-form-item{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .table{
+      flex: 1;
+      overflow: hidden;
+    }
+    .pages{
+      max-height: 52px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+.ivu-input[disabled],fieldset[disabled] .ivu-input {
+  color: black !important;
+}
+
+
+// .contact{
+//   display: flex !important;
+//   justify-content: flex-start !important;
+//   align-items: center !important;
+//   margin-right: 10px !important;
+//   .ivu-btn{
+//       width: 36px !important;
+//       display: flex !important;
+//       justify-content: center !important;
+//       align-items: center !important;
+//   }
+// }
+// .contact .ivu-form-item .ivu-form-item-content{
+//  display: flex !important;
+//   justify-content: flex-start !important;
+//   align-items: center !important;
+// }
